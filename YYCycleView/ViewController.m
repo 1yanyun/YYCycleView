@@ -65,6 +65,7 @@
 
 - (NSMutableArray *)imgArr{
     if (!_imgArr) {
+        
         _imgArr = [NSMutableArray arrayWithArray:_cycleScrollView.imgArray];
         [_imgArr insertObject:[_cycleScrollView.imgArray lastObject] atIndex:0];
         [_imgArr addObject:_cycleScrollView.imgArray[0]];
